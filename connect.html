@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connect | David's World</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <nav>
+    <h2>David's World</h2>
+    <div class="nav-links">
+       <a href="home.html">Home</a>
+      <a href="past.html">Past</a>
+      <a href="present.html">Present</a>
+      <a href="connect.html">Connect</a>
+       <a href="passions.html">Passions</a>
+    </div>
+    <button onclick="toggleDark()">Dark Mode</button>
+  </nav>
+
+  <main>
+    <h1 style="text-align: center;">Looking to connect?</h1>
+    <hr style="margin-bottom: 40px; border-color: var(--border);">
+    
+    <p style="text-align: center; font-size: 1.2rem;">Are you a fellow Barça fan, gamer, or conspiracy theorist? Let's connect for the future!</p>
+    
+     <div style="text-align: center; margin: 30px 0;">
+      <img src="https://i.postimg.cc/CLgqWrbq/gaemroom.jpg" alt="Student Union Game Room" style="width: 100%; max-width: 600px; border-radius: 10px; border: 1px solid var(--border); box-shadow: 0 8px 20px rgba(0,0,0,0.1);">
+    </div>
+    
+    <p style="text-align: center;">I am usually in the game room at the student union on campus.</p>
+     <p style="text-align: center; font-weight: bold; font-size: 1.3rem;">Or you can add me on the socials!</p>
+    
+    <div class="social-icons">
+      <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+       <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-x-twitter"></i></a>
+      <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+    </div>
+    
+    <div style="margin-top: 50px; padding-top: 30px; border-top: 1px solid var(--border);">
+      <h3 style="text-align: center;">Send me a direct message:</h3>
+       <form onsubmit="checkForm(event)">
+        <label>Your Name:</label>
+        <input type="text" id="name" placeholder="John Doe">
+        
+        <label>Your Email:</label>
+         <input type="email" id="email" placeholder="john@example.com">
+        
+        <label>Your Message:</label>
+        <textarea id="message" rows="5" placeholder="Let's build something great together..."></textarea>
+        
+         <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 David's World. Visca el Barça!</p>
+  </footer>
+
+   <script src="script.js"></script>
+</body>
+</html>

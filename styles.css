@@ -1,0 +1,191 @@
+:root {
+  --bg-color: #f1efef;
+--text-color:#000000;
+   --accent: #004D98;
+  --border: #ce8808;
+}
+
+.dark-mode {
+--bg-color: #121212;
+  --text-color: #ffffff;
+ --accent: #EDBB00;
+  --border:#d40808;
+}
+
+body {
+font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+margin: 0;
+  padding: 0;
+line-height: 1.6;
+  display: flex;
+flex-direction: column;
+  min-height: 100vh;
+}
+
+nav {
+  display: flex;
+justify-content: space-between;
+ align-items: center;
+  padding: 20px 40px;
+border-bottom: 2px solid var(--border);
+}
+
+nav h2 {
+  background-color: var(--text-color);
+ color: var(--bg-color);
+  padding: 6px 6px;
+  margin:0;
+font-size: 1.5rem;
+   border-radius: 4px;
+  letter-spacing: 1px;
+}
+
+.nav-links a {
+  text-decoration: none;
+color: var(--text-color);
+  font-weight: bold;
+margin-right: 15px;
+  padding: 8px 20px;
+  border-radius: 25px;
+display: inline-block;
+  border: 2px solid var(--text-color);
+ background-color: transparent;
+  transition: all 0.3s ease-in-out
+}
+
+.nav-links a:hover {
+  background-color: var(--text-color);
+   color: var(--bg-color);
+transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button {
+  background-color: var(--text-color);
+  color: var(--bg-color);
+border: none;
+   padding: 10px 20px;
+  cursor: pointer;
+font-weight: bold;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+button:hover {
+ background-color: var(--accent);
+  color: white;
+  transform: scale(1.1);
+box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+}
+
+main {
+max-width: 900px;
+  margin: 40px auto;
+   padding: 0 20px;
+  flex-grow: 1;
+}
+
+.split-layout {
+  display: flex;
+ gap: 30px;
+  align-items: center;
+}
+
+.split-layout img {
+width: 50%;
+  border-radius: 10px;
+}
+
+.grid-layout {
+  display: grid;
+grid-template-columns: 1fr 1fr;
+   gap: 20px;
+}
+
+.card {
+ border: 1px solid var(--border);
+  padding: 20px;
+border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+border-radius: 5px;
+  margin-top: 10px;
+}
+
+form {
+  display: flex;
+flex-direction: column;
+   gap: 15px;
+  max-width: 500px;
+margin: 0 auto;
+}
+
+input, textarea {
+  padding: 10px;
+ border: 1px solid var(--border);
+  background-color: transparent;
+color: var(--text-color);
+}
+
+footer {
+background-color: var(--text-color);
+  color: var(--bg-color);
+  text-align: center;
+padding: 20px;
+  margin-top: 40px;
+}
+
+@media (max-width: 768px) {
+nav { flex-direction: column; gap: 15px; }
+  .split-layout {
+  flex-direction: column;
+  }
+  .split-layout img { width: 100%; }
+.grid-layout { grid-template-columns: 1fr; }
+}
+
+.hero-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('https://i.postimg.cc/DwPXcrN5/fcbarcelone-flag.jpg');
+background-size: cover;
+  background-position: center;
+ background-repeat: no-repeat;
+  color: #ffffff;
+text-align: center;
+  padding: 120px 20px;
+   margin: 0;
+}
+
+.hero-banner h1 {
+font-size: 3rem;
+  margin-bottom: 10px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+.hero-banner p {
+  font-size: 1.2rem;
+max-width: 600px;
+  margin: 0 auto;
+}
+
+.social-icons {
+  display: flex;
+justify-content: center;
+   gap: 30px;
+  margin: 20px 0 40px 0;
+}
+
+.social-icons a {
+color: var(--text-color);
+  font-size: 2.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.social-icons a:hover {
+  color: var(--accent);
+transform: scale(1.2)
+}
